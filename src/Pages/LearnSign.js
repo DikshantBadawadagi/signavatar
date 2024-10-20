@@ -129,7 +129,7 @@ function LearnSign() {
   for (let i = 0; i < words.wordList.length; i++) {
     wordButtons.push(
         <div className='col-md-4'>
-            <button className='signs w-100' onClick={()=>{
+            <button className='signs w-120' onClick={()=>{
               if(ref.animations.length === 0){
                 words[words.wordList[i]](ref);
               }
@@ -143,7 +143,7 @@ function LearnSign() {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <div className='col-md-3'>
+        <div className='col-md-2'>
             <h1 className='heading'>
               Alphabets
             </h1>

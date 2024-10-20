@@ -1,134 +1,215 @@
 body {
-    padding-top: 70px;
+    background-color: #205afc; /* Deep blue background */
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Default text color */
 }
 
-.heading{
+* {
+    box-sizing: border-box;
+}
+
+.heading {
     margin-top: 30px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
 }
-.space-between{
+
+.space-between {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.label-style{
+
+.label-style {
     font-size: 20px;
     margin-top: 30px;
+    color: white;
 }
 
-.input-style{
-    padding: 5px;
-    font-size: 20px !important;
-    margin-top: 20px !important;
+.input-style {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 2px solid white; /* White border */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: #205afc; /* Deep blue text */
+    transition: all 0.3s ease; /* Smooth transition on focus */
 }
 
-.btn-style{
-    padding: 10px !important;
-    font-size: 20px !important;
-    margin-top: 20px !important;
+.input-style:focus {
+    border-color: #1abc9c; /* Green border on focus */
+    box-shadow: 0 0 10px #1abc9c; /* Glowing effect on focus */
 }
 
-.w-33{
+.btn-style {
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: white; /* White button background */
+    color: #205afc; /* Deep blue text */
+    border: 2px solid #205afc; /* Deep blue border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-style:hover {
+    background-color: #1abc9c; /* Green on hover */
+    color: white; /* White text on hover */
+    border-color: white; /* White border on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.w-33 {
     width: 32%;
 }
 
-.btn-gap{
-    margin-top: 50px !important;
-}
-
-.bot-label{
+.bot-label {
     margin-top: 20px;
     font-size: 25px;
     text-align: center;
+    color: white;
 }
 
-.bot-image{
+.bot-image {
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-top: 10px;
     border-radius: 30px;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid white; /* White border */
+    transition: all 0.3s ease;
 }
 
-.bot-image:hover{
+.bot-image:hover {
     border-width: 5px;
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-canvas{
-    border-style: solid;
-    border-width: 3px;
-}
-
-.btn-start{
-    border: none !important;
-    background-color: #4CAF50 !important;
-}
-
-i{
-    margin-left: 20px;
+canvas {
+    margin-top: 20px;
+    border: 3px solid #205afca2; /* Light deep blue border */
 }
 
 .home-gradient {
-    background: rgb(33,37,41);
-    background: linear-gradient(180deg, rgba(33,37,41,1) 6%, rgba(9,9,121,1) 45%, rgba(12,186,235,0.5186449579831933) 100%);
+    background: linear-gradient(180deg, rgba(33, 37, 41, 1) 6%, rgba(32, 90, 252, 1) 100%);
     height: calc(100vh - 70px);
-    flex-direction: column
+    flex-direction: column;
 }
 
 .divider {
     display: block;
     height: 4px;
     width: 5rem !important;
-    background: #f76c2f;
+    background: white;
 }
 
 .section-heading {
-    color: red;
+    color: white; /* White for section heading */
 }
 
 .normal-text {
     font-size: large;
-}
-
-.footer-text, .footer-link {
-    text-decoration: none;
-    color:darkgray;
-}
-
-.footer-link:hover {
     color: white;
 }
 
+.footer-text,
+.footer-link {
+    text-decoration: none;
+    color: lightgray; /* Light gray links */
+}
+
+.footer-link:hover {
+    color: white; /* White on hover */
+}
+
 .card-footer-style {
-    background-color: darkblue !important;
-    color: white !important;
-    
+    background-color: #205afc; /* Deep blue */
+    color: white;
 }
 
 .card-background {
-    background:  linear-gradient(50deg, rgb(191, 231, 241), #fff) !important;
+    background: linear-gradient(50deg, rgb(191, 231, 241), #fff) !important; /* Light gradient */
 }
 
 .card-background:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-.signs{
+.signs {
     margin-top: 10px;
     height: 35px;
     color: white;
     font-weight: bold;
-    background-color: blue;
+    background-color: #205afc; /* Deep blue */
     border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.signs:hover {
+    background-color: #ffffff; /* Green on hover */
+    color: #205afc; /* Deep blue text on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .hor-line {
     border: 0;
-    clear:both;
-    display:block;
-    width: 85%;               
-    background-color: gainsboro;
+    clear: both;
+    display: block;
+    width: 85%;
+    background-color: white; /* White horizontal line */
     height: 1px;
+}
+
+/* Styles for col-md-3 and col-md-2 */
+.col-md-2 {
+    background-color: rgba(32, 90, 252, 0.63); /* Light deep blue background */
+    color: #205afc; /* Dark text color for contrast */ /* Subtle shadow */
+}
+
+.col-md-7 {
+    background-color: rgba(32, 90, 252, 0.63); /* Light deep blue background */
+    color: #205afc; /* Dark text color for contrast */
+
+    width: 800px; 
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonPop {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.btn-style {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.bot-image {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.signs {
+    animation: buttonPop 0.4s ease-in-out;
 }
